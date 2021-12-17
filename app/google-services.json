@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "453829787824",
+    "project_id": "goshop-1",
+    "storage_bucket": "goshop-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453829787824:android:e20b0738ffc13b0a253b75",
+        "android_client_info": {
+          "package_name": "com.example.goshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453829787824-ursna6nkm5qcdfa2qjgisa5ovve4m7u8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2MWHNmlkjmWZ5AWlgxnrjlE_mBhupf3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453829787824-ursna6nkm5qcdfa2qjgisa5ovve4m7u8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

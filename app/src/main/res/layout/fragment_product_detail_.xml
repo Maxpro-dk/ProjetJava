@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.Product_detail_Fragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:padding="@dimen/m_16">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <ImageView
+        android:id="@+id/img_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/fleur"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:layout_marginVertical="0dp"/>
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Infinix Hot 2"
+            android:textSize="@dimen/text_size_36"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="2 000 000 Fcfa"
+            tools:ignore="MissingConstraints"
+            android:textSize="@dimen/text_size_20"
+            android:paddingTop="@dimen/p_10"
+            android:textColor="@color/blue"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ly1"
+        android:textSize="@dimen/text_size_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/name">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Quantité disponible:  "/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/quantity_in_stock"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="251"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     Quantité alerte:  "
+            android:textSize="@dimen/text_size_16"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/alert_quantity"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="251"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ly1"
+        android:layout_marginTop="@dimen/m_16"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="@dimen/text_size_20"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:paddingBottom="@dimen/m1"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem
+                Ipsum."/>
+
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

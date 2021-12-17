@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">goshop</string>
+    <string name="ce_formulaire_vous_permet_d_ajouter_un_nouveau_produit">Ce formulaire vous permet d\'ajouter un nouveau produit</string>
+    <string name="d_signation">Désignation</string>
+    <string name="descriptonn">Descriptonn</string>
+    <string name="prix">Prix</string>
+    <string name="available_quantity">Quantité en stock</string>
+    <string name="alert_quantity">Quantité alerte</string>
+    <string name="add">Enregistrer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

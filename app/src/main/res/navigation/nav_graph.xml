@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/productsListFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.goshop.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_product_detail_Fragment"
+            app:destination="@id/product_detail_Fragment"
+            app:launchSingleTop="false" />
+        <action
+            android:id="@+id/action_mainFragment_to_productsListFragment"
+            app:destination="@id/productsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/product_detail_Fragment"
+        android:name="com.example.goshop.ui.main.Product_detail_Fragment"
+        android:label="fragment_product_detail_"
+        tools:layout="@layout/fragment_product_detail_" />
+    <fragment
+        android:id="@+id/productsListFragment"
+        android:name="com.example.goshop.ui.main.ProductsListFragment"
+        android:label="products_list_fragment"
+        tools:layout="@layout/products_list_fragment" >
+        <action
+            android:id="@+id/action_productsListFragment_to_product_detail_Fragment"
+            app:destination="@id/product_detail_Fragment" />
+        <action
+            android:id="@+id/action_productsListFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

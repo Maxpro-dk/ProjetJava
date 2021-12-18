@@ -49,7 +49,6 @@ public class ProductAdapter  extends RecyclerView.Adapter<ProductAdapter.ViewHol
         Bitmap bitmap = new ImageManager(context).setFileName(product.uri).load();
         viewHolder.imageView.setImageBitmap(bitmap);
 
-
     }
 
     @Override
@@ -80,18 +79,32 @@ public class ProductAdapter  extends RecyclerView.Adapter<ProductAdapter.ViewHol
             name = itemView.findViewById(R.id.name);
             imageView =itemView.findViewById(R.id.imageView);
             imageView.setOnClickListener(this);
+            name.setOnClickListener(this);
+
+
 
         }
 
 
         @Override
         public void onClick(View v) {
-            onProductListener.onProductClick(getAdapterPosition(),v);
-        }
-    }
+            // tu verifie la methode à weiget cliquer et tu applique la fonction correspondante
+            if (v==name){
+                onProductListener.onNameClick(getAbsoluteAdapterPosition(),v);
+            }
+            if (v==imageView){
+                onProductListener.onProductClick(getAdapterPosition(),v);
+            }
 
+
+        }
+
+    }
+ //ici tu declare les differente click que tu veux  effectuer
     public interface OnProductListener{
         void onProductClick(int position ,View view);
+        void onNameClick(int position , View view);
 
     }
+
 }

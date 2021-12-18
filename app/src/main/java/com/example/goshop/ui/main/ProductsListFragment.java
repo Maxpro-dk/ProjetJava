@@ -84,6 +84,22 @@ public class ProductsListFragment extends Fragment implements LifecycleOwner , P
 
     }
 
+    @Override
+    public void onNameClick(int position, View view) {
+      AlertDialog.Builder dialog = new AlertDialog.Builder(getContext());
+      dialog.setTitle("Info sur le produit ");
+      dialog.setMessage("le produit cliqué est"+mViewModel.getDataLive().getValue().get(position).name);
+      dialog.setNegativeButton("ok", new DialogInterface.OnClickListener() {
+          @Override
+          public void onClick(DialogInterface dialog, int which) {
+              dialog.dismiss();
+          }
+      });
+      dialog.show();
+
+
+    }
+
     private  View.OnClickListener addProductPage = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
